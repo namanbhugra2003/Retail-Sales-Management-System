@@ -1,0 +1,342 @@
+/* ===== GLOBAL LAYOUT ===== */
+.app-layout {
+  display: flex;
+  height: 100vh;
+  width: 100%;
+}
+
+/* ===== SIDEBAR ===== */
+.sidebar {
+  width: 260px;
+  background-color: #ffffff;
+  border-right: 1px solid #e5e7eb;
+  padding: 20px;
+}
+
+/* ===== PROFILE CARD ===== */
+.profile-card {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 12px;
+  border-radius: 10px;
+  background: #f9fafb;
+  margin-bottom: 24px;
+}
+
+.avatar {
+  height: 36px;
+  width: 36px;
+  border-radius: 50%;
+  background: #111827;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 600;
+}
+
+.profile-info {
+  flex: 1;
+}
+
+.app-name {
+  font-size: 12px;
+  color: #6b7280;
+}
+
+.user-name {
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.dropdown-icon {
+  color: #6b7280;
+}
+
+/* ===== NAVIGATION ===== */
+.nav {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.nav-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 8px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.nav-item:hover {
+  background: #f3f4f6;
+}
+
+.nav-item svg {
+  font-size: 18px;
+  color: #374151;
+}
+
+.nav-group .nav-subitems {
+  padding-left: 28px;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  margin-top: 6px;
+  color: #6b7280;
+  font-size: 14px;
+}
+
+.nav-group .expand-icon {
+  margin-left: auto;
+  color: #9ca3af;
+}
+
+/* ===== MAIN CONTENT ===== */
+.main-content {
+  flex: 1;
+  padding: 24px;
+  background-color: #f9fafb;
+  overflow-y: auto;
+}
+
+/* ===== HEADER ===== */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.header h1 {
+  font-size: 28px;
+  font-weight: 600;
+}
+
+/* ===== SEARCH ===== */
+.search-wrapper {
+  position: relative;
+}
+
+.search-wrapper input {
+  padding: 10px 12px 10px 36px;
+  width: 260px;
+  border-radius: 8px;
+  border: 1px solid #d1d5db;
+  font-size: 14px;
+}
+
+.search-icon {
+  position: absolute;
+  left: 12px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #9ca3af;
+}
+
+/* ===== FILTERS ===== */
+.filters {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  margin-bottom: 20px;
+  align-items: center;
+}
+
+.filters select {
+  padding: 8px 10px;
+  border-radius: 8px;
+  border: 1px solid #d1d5db;
+  background: white;
+  font-size: 14px;
+}
+
+.filters .sort {
+  margin-left: auto;
+}
+
+/* Reset / Refresh Button */
+.reset-btn {
+  height: 36px;
+  width: 36px;
+  border-radius: 8px;
+  border: 1px solid #d1d5db;
+  background: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+/* ===== STATS ===== */
+.stats {
+  display: flex;
+  gap: 16px;
+  margin-bottom: 24px;
+}
+
+.stat {
+  background: #ffffff;
+  border: 1px solid #e5e7eb;
+  border-radius: 12px;
+  padding: 16px;
+  width: 240px;
+}
+
+/* Stat header with info icon */
+.stat-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 14px;
+  color: #6b7280;
+}
+
+.info-icon {
+  font-size: 14px;
+  color: #9ca3af;
+  cursor: pointer;
+}
+
+.stat strong {
+  font-size: 20px;
+  display: block;
+  margin-top: 6px;
+  color: #111827;
+}
+
+/* ===== TABLE ===== */
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  background: white;
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.table thead {
+  background-color: #f3f4f6;
+}
+
+.table th,
+.table td {
+  padding: 12px 14px;
+  text-align: left;
+  border-bottom: 1px solid #e5e7eb;
+  font-size: 14px;
+}
+
+.table th {
+  font-weight: 600;
+  color: #374151;
+}
+
+.table td strong {
+  font-weight: 600;
+}
+
+/* Copy icon in phone column */
+.copy-icon {
+  margin-left: 6px;
+  color: #6b7280;
+  cursor: pointer;
+}
+
+/* ===== PAGINATION ===== */
+.pagination {
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+  margin-top: 16px;
+}
+
+.pagination button {
+  padding: 8px 12px;
+  border-radius: 8px;
+  border: 1px solid #d1d5db;
+  background: white;
+  cursor: pointer;
+}
+/* ===== TOOLTIP ===== */
+.tooltip-wrapper {
+  position: relative;
+}
+
+.tooltip {
+  position: absolute;
+  top: 22px;
+  right: 0;
+  background: #111827;
+  color: white;
+  font-size: 12px;
+  padding: 6px 8px;
+  border-radius: 6px;
+  white-space: nowrap;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.2s ease;
+}
+
+.tooltip-wrapper:hover .tooltip {
+  opacity: 1;
+}
+
+/* ===== VAULT PROFILE (MATCH ASSIGNMENT EXACTLY) ===== */
+
+.vault-profile {
+  background: #ffffff;
+  border: 1px solid #e5e7eb;
+  border-radius: 12px;
+  padding: 10px 12px;
+}
+
+.vault-logo {
+  height: 40px;
+  width: 40px;
+  border-radius: 8px;
+  background: linear-gradient(135deg, #0f172a, #111827);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.vault-logo-text {
+  color: #3b82f6;
+  font-size: 18px;
+  font-weight: 700;
+}
+/* ===== PAGINATION (EXACT ORIGINAL UI MATCH) ===== */
+
+.pagination-numbers {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin: 24px 0;
+}
+
+.page-number {
+  width: 36px;
+  height: 36px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background-color: #f3f4f6;   /* light grey */
+  border-radius: 8px;
+
+  font-size: 14px;
+  font-weight: 500;
+  color: #374151;
+
+  cursor: pointer;
+  user-select: none;
+}
+
+/* Active page (dark box) */
+.page-number.active {
+  background-color: #111827;   /* dark */
+  color: #ffffff;
+}
